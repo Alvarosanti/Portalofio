@@ -10,20 +10,51 @@ import {
 	TelegramShareButton,
 	TelegramIcon
 } from 'next-share';
+import Typed from 'typed.js';
+import { useRef, useEffect } from 'react';
 
 export default function Header1() {
+	const el = useRef(null);
+	const typed = useRef(null);
+	useEffect(() => {
+		const options = {
+			strings: [ '<strong>Alvaro Santisteban</strong>' ],
+			typeSpeed: 90,
+			backSpeed: 50,
+			startDelay: 1000,
+			loop: false,
+			loopCount: false,
+			cursorChat: '|',
+			backDelay: 1500
+		};
+
+		typed.current = new Typed(el.current, options);
+		return () => {
+			typed.current.destroy();
+		};
+	}, []);
+
+	const handleClickDownloadResume = () => {
+		fetch('Alvaro_Santisteban_Laura_Resume.pdf').then((response) => {
+			response.blob().then((blob) => {
+				const fileUrl = window.URL.createObjectURL(blob);
+				let alink = document.createElement('a');
+				alink.target = '_blank';
+				alink.href = fileUrl;
+				// alink.download = 'Alvaro_Santisteban_Laura_Resume.pdf';
+				alink.click();
+			});
+		});
+	};
+
 	return (
 		<header className="header">
 			<div className="container">
 				<ul className="social-icons pt-3">
 					<li className="social-item">
-						<EmailShareButton
-							url={'"alvarosantisteban56@gmail.com"'}
-							subject={'Hola que tal'}
-							body="Te escribo por medio de tu portafolio... escribeme a"
-						>
+						<a href="mailto: alvarosantisteban56@gmail.com">
 							<EmailIcon size={32} round />
-						</EmailShareButton>
+						</a>
 					</li>
 					<li className="social-item">
 						<LinkedinShareButton url={'https://www.linkedin.com/in/alvaro-santisteban/'}>
@@ -49,10 +80,12 @@ export default function Header1() {
 				</ul>
 				<div className="header-content">
 					<h4 className="header-subtitle">Hello, I am</h4>
-					<h1 className="header-title">Alvaro Santisteban</h1>
+					<h1 className="header-title">
+						<span style={{ whiteSpace: 'pre' }} ref={el} />'
+					</h1>
 					<h6 className="header-mono">Software Engineer | Developer</h6>
-					<button className="btn btn-primary btn-rounded">
-						<i className="ti-printer pr-2" />Print Resume
+					<button onClick={handleClickDownloadResume} className="btn btn-primary btn-rounded">
+						<i className="ti-printer pr-2" />Ver Resumen&nbsp;
 					</button>
 				</div>
 			</div>

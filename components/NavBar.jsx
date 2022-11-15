@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 export default function NavBar() {
 	return (
 		<nav
@@ -36,7 +38,13 @@ export default function NavBar() {
 						</li>
 					</ul>
 					<ul className="navbar-nav brand">
-						<img src="assets/imgs/avatar.jpg" alt="" className="brand-img" />
+						<Image
+							width="170"
+							height="170"
+							alt={'profile_img_top_center'}
+							src="https://res.cloudinary.com/dzsitpxzw/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1668205425/portafolio/profile_dli4mi.jpg"
+							className="brand-img"
+						/>
 						<li className="brand-txt">
 							<h5 className="brand-title">John Doe</h5>
 							<div className="brand-subtitle">Web Designer | Developer</div>

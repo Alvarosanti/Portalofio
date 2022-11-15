@@ -1,77 +1,106 @@
+'use client';
+import {
+	EmailShareButton,
+	EmailIcon,
+	LinkedinShareButton,
+	LinkedinIcon,
+	TwitterShareButton,
+	TwitterIcon,
+	TelegramShareButton,
+	TelegramIcon
+} from 'next-share';
+
 export default function About() {
+	const handleClickDownloadResume = () => {
+		fetch('Alvaro_Santisteban_Laura_Resume.pdf').then((response) => {
+			response.blob().then((blob) => {
+				const fileUrl = window.URL.createObjectURL(blob);
+				let alink = document.createElement('a');
+				alink.href = fileUrl;
+				alink.download = 'Alvaro_Santisteban_Laura_Resume.pdf';
+				alink.click();
+			});
+		});
+	};
+
 	return (
 		<div className="container-fluid">
 			<div id="about" className="row about-section">
 				<div className="col-lg-4 about-card">
-					<h3 className="font-weight-light">Who am I ?</h3>
+					<h3 className="font-weight-light">Qui&eacute;n soy?</h3>
 					<span className="line mb-5" />
-					<h5 className="mb-3">A Web Designer / Developer Located In Our Lovely Earth</h5>
+					<h5 className="mb-3">Desarrollador / Estudiante en Ingenier&iacute;a Inform&aacute;tica</h5>
 					<p className="mt-20">
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit.sit amet, Qui deserunt consequatur
-						fugit repellendusillo voluptas?
+						Tengo la capacidad de adaptarme rapido y afrontar los problemas de manera efectiva, tengo un
+						gran interés de aprender todo el tiempo, me considero una persona empática con valores,
+						compromiso, responsabilidad y honesto.
 					</p>
-					<button className="btn btn-outline-danger">
-						<i className="icon-down-circled2 " />Download My CV
+					<button onClick={handleClickDownloadResume} className="btn btn-outline-danger">
+						<i className="icon-down-circled2 " />Descargar CV
 					</button>
 				</div>
 				<div className="col-lg-4 about-card">
-					<h3 className="font-weight-light">Personal Info</h3>
+					<h3 className="font-weight-light">Informaci&oacute;n Personal</h3>
 					<span className="line mb-5" />
 					<ul className="mt40 info list-unstyled">
 						<li>
-							<span>Birthdate</span> : 09/13/1996
+							<span>Cumpleaños</span> : 12/07/1998
 						</li>
 						<li>
-							<span>Email</span> : info@website.com
+							<span>Email</span> :<a href="mailto: alvarosantisteban56@gmail.com">
+								{' '}
+								alvarosantisteban56@gmail.com
+							</a>
 						</li>
 						<li>
-							<span>Phone</span> : + (123) 456-7890
+							<span>Tel&eacute;fono</span> : +51 967788705
 						</li>
 						<li>
-							<span>Skype</span> : John_Doe{' '}
+							<span>Telegram</span> : <a href="https://t.me/alvarod12">@alvarod12 </a>
 						</li>
 						<li>
-							<span>Address</span> : 12345 Fake ST NoWhere AB Country.
+							<span>Ubicaci&oacute;n</span> : Lima, Per&uacute;
 						</li>
 					</ul>
 					<ul className="social-icons pt-3">
 						<li className="social-item">
-							<a className="social-link" href="#">
-								<i className="ti-facebook" aria-hidden="true" />
+							<a href="mailto: alvarosantisteban56@gmail.com">
+								<EmailIcon size={32} round />
 							</a>
 						</li>
 						<li className="social-item">
-							<a className="social-link" href="#">
-								<i className="ti-twitter" aria-hidden="true" />
-							</a>
+							<LinkedinShareButton url={'https://www.linkedin.com/in/alvaro-santisteban/'}>
+								<LinkedinIcon size={32} round />
+							</LinkedinShareButton>
 						</li>
 						<li className="social-item">
-							<a className="social-link" href="#">
-								<i className="ti-google" aria-hidden="true" />
-							</a>
+							<TwitterShareButton
+								url={'https://twitter.com/Alvaro00110001'}
+								title={'Hola que tal, te saludo desde tu portafolio...'}
+							>
+								<TwitterIcon size={32} round />
+							</TwitterShareButton>
 						</li>
 						<li className="social-item">
-							<a className="social-link" href="#">
-								<i className="ti-instagram" aria-hidden="true" />
-							</a>
-						</li>
-						<li className="social-item">
-							<a className="social-link" href="#">
-								<i className="ti-github" aria-hidden="true" />
-							</a>
+							<TelegramShareButton
+								url={'https://t.me/alvarod12'}
+								title={'Hola que tal, vengo desde tu portafolio...'}
+							>
+								<TelegramIcon size={32} round />
+							</TelegramShareButton>
 						</li>
 					</ul>
 				</div>
 				<div className="col-lg-4 about-card">
-					<h3 className="font-weight-light">My Expertise</h3>
+					<h3 className="font-weight-light">Experiencia</h3>
 					<span className="line mb-5" />
 					<div className="row">
 						<div className="col-1 text-danger pt-1">
 							<i className="ti-widget icon-lg" />
 						</div>
 						<div className="col-10 ml-auto mr-3">
-							<h6>UX Design</h6>
-							<p className="subtitle"> exercitat Repellendus, corrupt.</p>
+							<h6>HelpDesk</h6>
+							<p className="subtitle"> Tickets, Server Onsite, Linux</p>
 							<hr />
 						</div>
 					</div>
@@ -80,8 +109,8 @@ export default function About() {
 							<i className="ti-paint-bucket icon-lg" />
 						</div>
 						<div className="col-10 ml-auto mr-3">
-							<h6>Web Development</h6>
-							<p className="subtitle">Lorem ipsum dolor sit consectetur.</p>
+							<h6>FrontEnd Developer</h6>
+							<p className="subtitle">Desarrollo en ReactJs</p>
 							<hr />
 						</div>
 					</div>
@@ -90,8 +119,8 @@ export default function About() {
 							<i className="ti-stats-up icon-lg" />
 						</div>
 						<div className="col-10 ml-auto mr-3">
-							<h6>Digital Marketing</h6>
-							<p className="subtitle">voluptate commodi illo voluptatib.</p>
+							<h6>Q.Asurance</h6>
+							<p className="subtitle">Automatizacion con Cypress</p>
 							<hr />
 						</div>
 					</div>

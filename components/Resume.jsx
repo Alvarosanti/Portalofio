@@ -10,51 +10,19 @@ export default function Resume() {
 						<div className="card">
 							<div className="card-header">
 								<div className="mt-2">
-									<h4>Expertise</h4>
+									<h4>Educaci&oacute;n</h4>
 									<span className="line" />
 								</div>
 							</div>
 							<div className="card-body">
-								<h6 className="title text-danger">2017 - Present</h6>
-								<p>UX Developer</p>
+								<h6 className="title text-danger">2016 - Present</h6>
+								<p>Ing. Inform&aacute;tica</p>
 								<p className="subtitle">
-									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum recusandae,
-									cupiditate ullam dolor ratione repellendus.aliquid repudiandae saepe!.
+									Estudiante de la carrera Ingenier&iacute;a Inform&aacute;tica en la universidad
+									Ricardo Palma.
 								</p>
 								<hr />
-								<h6 className="title text-danger">2016 - 2017</h6>
-								<p>Front-end Developer</p>
-								<p className="subtitle">
-									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum recusandae,
-									cupiditate ullam dolor ratione repellendus.aliquid repudiandae saepe!.
-								</p>
-								<hr />
-								<h6 className="title text-danger">2015 - 2016</h6>
-								<p>UX Designer</p>
-								<p className="subtitle">
-									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum recusandae,
-									cupiditate ullam dolor ratione repellendus.aliquid repudiandae saepe!.
-								</p>
-							</div>
-						</div>
-					</div>
-					<div className="col-md-6 col-lg-4">
-						<div className="card">
-							<div className="card-header">
-								<div className="mt-2">
-									<h4>Education</h4>
-									<span className="line" />
-								</div>
-							</div>
-							<div className="card-body">
-								<h6 className="title text-danger">2017 - Present</h6>
-								<p>B.E Computer Engineering</p>
-								<p className="subtitle">
-									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error corrupti recusandae
-									obcaecati odit repellat ducimus cum, minus tempora aperiam at.
-								</p>
-								<hr />
-								<h6 className="title text-danger">2016 - 2017</h6>
+								{/* <h6 className="title text-danger">2016 - 2017</h6>
 								<p>Diploma in Computer Engineering</p>
 								<p className="subtitle">
 									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, id officiis quas
@@ -66,10 +34,31 @@ export default function Resume() {
 								<p className="subtitle">
 									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum recusandae,
 									cupiditate ullam dolor ratione repellendus.aliquid repudiandae saepe!.
-								</p>
+								</p> */}
 							</div>
 						</div>
 					</div>
+					<div className="col-md-6 col-lg-4">
+						<div className="card">
+							<div className="card-header">
+								<div className="mt-2">
+									<h4>Experiencia</h4>
+									<span className="line" />
+								</div>
+							</div>
+							<div className="card-body">
+								<h6 className="title text-danger">2020 - 2021</h6>
+								<p>Software Engineer Trainee</p>
+								<p className="subtitle">Serpost -</p>
+								<hr />
+								<h6 className="title text-danger">2021 - Presente</h6>
+								<p>Front-end Developer</p>
+								<p className="subtitle">Mandu -</p>
+								<hr />
+							</div>
+						</div>
+					</div>
+
 					<div className="col-lg-4">
 						<div className="card">
 							<div className="card-header">
@@ -95,19 +84,8 @@ export default function Resume() {
 									<div
 										className="progress-bar bg-danger"
 										role="progressbar"
-										style={{ width: '85%' }}
-										aria-valuenow="25"
-										aria-valuemin="0"
-										aria-valuemax="100"
-									/>
-								</div>
-								<h6>PHP</h6>
-								<div className="progress mb-3">
-									<div
-										className="progress-bar bg-danger"
-										role="progressbar"
 										style={{ width: '80%' }}
-										aria-valuenow="50"
+										aria-valuenow="25"
 										aria-valuemin="0"
 										aria-valuemax="100"
 									/>
@@ -117,29 +95,7 @@ export default function Resume() {
 									<div
 										className="progress-bar bg-danger"
 										role="progressbar"
-										style={{ width: '90%' }}
-										aria-valuenow="75"
-										aria-valuemin="0"
-										aria-valuemax="100"
-									/>
-								</div>
-								<h6>Laborum</h6>
-								<div className="progress mb-3">
-									<div
-										className="progress-bar bg-danger"
-										role="progressbar"
-										style={{ width: '90%' }}
-										aria-valuenow="75"
-										aria-valuemin="0"
-										aria-valuemax="100"
-									/>
-								</div>
-								<h6>Tempora</h6>
-								<div className="progress mb-3">
-									<div
-										className="progress-bar bg-danger"
-										role="progressbar"
-										style={{ width: '90%' }}
+										style={{ width: '70%' }}
 										aria-valuenow="75"
 										aria-valuemin="0"
 										aria-valuemax="100"
@@ -147,7 +103,7 @@ export default function Resume() {
 								</div>
 							</div>
 						</div>
-						<div className="card">
+						{/* <div className="card">
 							<div className="card-header">
 								<div className="pull-left">
 									<h4 className="mt-2">Languages</h4>
@@ -189,7 +145,7 @@ export default function Resume() {
 									/>
 								</div>
 							</div>
-						</div>
+						</div> */}
 					</div>
 				</div>
 			</div>
