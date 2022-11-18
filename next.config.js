@@ -1,13 +1,12 @@
-/** @type {import('next').NextConfig} */
+/** @type {import('nextJs').NextConfig} */
 const nextConfig = {
 	experimental: {
 		appDir: true
 	},
 	images: {
-		domains: ['res.cloudinary.com']
+		domains: [ 'res.cloudinary.com' ]
 	},
-
-	reactStrictMode: true
+	reactStrictMode: false
 };
 
 module.exports = nextConfig;

@@ -3,7 +3,7 @@ export default function Resume() {
 		<section className="section" id="resume">
 			<div className="container">
 				<h2 className="mb-5">
-					<span className="text-danger">My</span> Resume
+					<span className="text-danger">Mi</span> Curr&iacute;culum
 				</h2>
 				<div className="row">
 					<div className="col-md-6 col-lg-4">
@@ -22,19 +22,6 @@ export default function Resume() {
 									Ricardo Palma.
 								</p>
 								<hr />
-								{/* <h6 className="title text-danger">2016 - 2017</h6>
-								<p>Diploma in Computer Engineering</p>
-								<p className="subtitle">
-									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, id officiis quas
-									placeat quia voluptas dolorum rem animi nostrum quae.aliquid repudiandae saepe!.
-								</p>
-								<hr />
-								<h6 className="title text-danger">2015 - 2016</h6>
-								<p>High School Degree</p>
-								<p className="subtitle">
-									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum recusandae,
-									cupiditate ullam dolor ratione repellendus.aliquid repudiandae saepe!.
-								</p> */}
 							</div>
 						</div>
 					</div>
@@ -68,12 +55,34 @@ export default function Resume() {
 								</div>
 							</div>
 							<div className="card-body pb-2">
-								<h6>hTL5 &amp; CSS3</h6>
+								<h6>ReactJs</h6>
 								<div className="progress mb-3">
 									<div
 										className="progress-bar bg-danger"
 										role="progressbar"
-										style={{ width: '97%' }}
+										style={{ width: '80%' }}
+										aria-valuenow="25"
+										aria-valuemin="0"
+										aria-valuemax="100"
+									/>
+								</div>
+								<h6>NodeJs</h6>
+								<div className="progress mb-3">
+									<div
+										className="progress-bar bg-danger"
+										role="progressbar"
+										style={{ width: '50%' }}
+										aria-valuenow="25"
+										aria-valuemin="0"
+										aria-valuemax="100"
+									/>
+								</div>
+								<h6>MongoDB</h6>
+								<div className="progress mb-3">
+									<div
+										className="progress-bar bg-danger"
+										role="progressbar"
+										style={{ width: '65%' }}
 										aria-valuenow="25"
 										aria-valuemin="0"
 										aria-valuemax="100"
@@ -95,23 +104,13 @@ export default function Resume() {
 									<div
 										className="progress-bar bg-danger"
 										role="progressbar"
-										style={{ width: '70%' }}
+										style={{ width: '65%' }}
 										aria-valuenow="75"
 										aria-valuemin="0"
 										aria-valuemax="100"
 									/>
 								</div>
-							</div>
-						</div>
-						{/* <div className="card">
-							<div className="card-header">
-								<div className="pull-left">
-									<h4 className="mt-2">Languages</h4>
-									<span className="line" />
-								</div>
-							</div>
-							<div className="card-body pb-2">
-								<h6>English</h6>
+								<h6>Git</h6>
 								<div className="progress mb-3">
 									<div
 										className="progress-bar bg-danger"
@@ -122,30 +121,30 @@ export default function Resume() {
 										aria-valuemax="100"
 									/>
 								</div>
-								<h6>French</h6>
+								<h6>Python</h6>
 								<div className="progress mb-3">
 									<div
 										className="progress-bar bg-danger"
 										role="progressbar"
-										style={{ width: '45%' }}
+										style={{ width: '40%' }}
 										aria-valuenow="25"
 										aria-valuemin="0"
 										aria-valuemax="100"
 									/>
 								</div>
-								<h6>Spanish</h6>
+								<h6>Java</h6>
 								<div className="progress mb-3">
 									<div
 										className="progress-bar bg-danger"
 										role="progressbar"
-										style={{ width: '67%' }}
-										aria-valuenow="50"
+										style={{ width: '30%' }}
+										aria-valuenow="25"
 										aria-valuemin="0"
 										aria-valuemax="100"
 									/>
 								</div>
 							</div>
-						</div> */}
+						</div>
 					</div>
 				</div>
 			</div>

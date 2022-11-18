@@ -18,7 +18,7 @@ export default function Header1() {
 	const typed = useRef(null);
 	useEffect(() => {
 		const options = {
-			strings: [ '<strong>Alvaro Santisteban</strong>' ],
+			strings: [ '<a>Alvaro Santisteban</a>' ],
 			typeSpeed: 90,
 			backSpeed: 50,
 			startDelay: 1000,
