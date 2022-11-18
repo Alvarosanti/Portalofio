@@ -53,7 +53,7 @@ export default function About() {
 							</a>
 						</li>
 						<li>
-							<span>Tel&eacute;fono</span> : +51 967788705
+							<span>Tel&eacute;fono</span> : <a href="tel:+51 969369120">+51 969369120</a>
 						</li>
 						<li>
 							<span>Telegram</span> : <a href="https://t.me/alvarod12">@alvarod12 </a>

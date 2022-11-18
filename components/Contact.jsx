@@ -1,8 +1,15 @@
 'use client';
 
-import { Form } from 'semantic-ui-react';
+import { Snackbar, Alert } from '@mui/material';
+import { useState } from 'react';
 
 export default function Contact() {
+	const [ openSuccess, setOpenSuccess ] = useState(false);
+	const [ openError, setOpenError ] = useState(false);
+	const [ name, setName ] = useState('');
+	const [ email, setEmail ] = useState('');
+	const [ mesagge, setMesagge ] = useState('');
+
 	async function sendEmail(e) {
 		e.preventDefault();
 		const formData = {};
@@ -15,10 +22,35 @@ export default function Contact() {
 				method: 'post',
 				body: JSON.stringify(formData)
 			});
+			setName('');
+			setEmail('');
+			setMesagge('');
+			setOpenSuccess(true);
 		} catch (error) {
-			alert('Falla en la matrix');
+			alert('Falla en la matrix', error);
+			setOpenError(true);
 		}
 	}
+
+	const handleCloseSuccess = () => {
+		setOpenSuccess(false);
+	};
+
+	const handleCloseError = () => {
+		setOpenError(false);
+	};
+
+	const handleChangeName = (e) => {
+		setName(e.target.value);
+	};
+
+	const handleChangeEmail = (e) => {
+		setEmail(e.target.value);
+	};
+
+	const handleChangeMesagge = (e) => {
+		setMesagge(e.target.value);
+	};
 
 	return (
 		<div className="section contact" id="contact">
@@ -35,6 +67,8 @@ export default function Contact() {
 										type="text"
 										placeholder="Nombre *"
 										name="name"
+										value={name}
+										onChange={handleChangeName}
 										required
 									/>
 								</div>
@@ -44,6 +78,8 @@ export default function Contact() {
 										type="email"
 										placeholder="Email *"
 										name="email"
+										value={email}
+										onChange={handleChangeEmail}
 										required
 									/>
 								</div>
@@ -54,6 +90,9 @@ export default function Contact() {
 										placeholder="Mensaje *"
 										name="mesagge"
 										rows="5"
+										cols="5"
+										value={mesagge}
+										onChange={handleChangeMesagge}
 										required
 									/>
 								</div>
@@ -74,7 +113,10 @@ export default function Contact() {
 								</div>
 								<div className="col-10 ">
 									<h6 className="d-inline">
-										Tel&eacute;fono : <br /> <span className="text-muted">+51 967788705</span>
+										Tel&eacute;fono : <br />{' '}
+										<span className="text-muted">
+											<a href="tel:+51 969369120">+51 969369120</a>
+										</span>
 									</h6>
 								</div>
 							</div>
@@ -131,7 +173,16 @@ export default function Contact() {
 						</div>
 					</div>
 				</div>
+				<Snackbar open={openSuccess} autoHideDuration={6000} onClose={handleCloseSuccess}>
+					<Alert onClose={handleCloseSuccess} severity="success" sx={{ width: '100%' }}>
+						Mensaje enviado!
+					</Alert>
+				</Snackbar>
 			</div>
+
+			<Snackbar open={openError} autoHideDuration={6000} onClose={handleCloseError}>
+				<Alert severity="error">Error al enviar el mensaje, int&eacute;ntalo mas tarde</Alert>;
+			</Snackbar>
 		</div>
 	);
 }
