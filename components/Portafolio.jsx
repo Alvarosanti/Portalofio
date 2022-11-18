@@ -1,5 +1,6 @@
 import '../scss/card.module.scss';
 import '../styles/portafolio.css';
+import Image from 'next/image';
 
 export default function Portafolio() {
 	return (
@@ -11,7 +12,7 @@ export default function Portafolio() {
 				<div className="portfolio">
 					<div className="portfolio-container">
 						<div className="portfolio-item">
-							<img
+							<Image
 								src=" https://res.cloudinary.com/dzsitpxzw/image/upload/v1668206086/portafolio/wall2_smykx8.jpg"
 								className="img-fluid"
 								alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates"
@@ -30,7 +31,7 @@ export default function Portafolio() {
 							</div>
 						</div>
 						<div className="portfolio-item">
-							<img
+							<Image
 								src=" https://res.cloudinary.com/dzsitpxzw/image/upload/v1668206086/portafolio/wall2_smykx8.jpg"
 								className="img-fluid"
 								alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates"
@@ -50,7 +51,7 @@ export default function Portafolio() {
 							</div>
 						</div>
 						<div className="portfolio-item">
-							<img
+							<Image
 								src=" https://res.cloudinary.com/dzsitpxzw/image/upload/v1668206086/portafolio/wall2_smykx8.jpg"
 								className="img-fluid"
 								alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates"
@@ -69,7 +70,7 @@ export default function Portafolio() {
 							</div>
 						</div>
 						<div className="portfolio-item">
-							<img
+							<Image
 								src=" https://res.cloudinary.com/dzsitpxzw/image/upload/v1668206086/portafolio/wall2_smykx8.jpg"
 								className="img-fluid"
 								alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates"
