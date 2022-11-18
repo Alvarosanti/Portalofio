@@ -13,6 +13,8 @@ export default function Portafolio() {
 					<div className="portfolio-container">
 						<div className="portfolio-item">
 							<Image
+								width="470"
+								height="470"
 								src=" https://res.cloudinary.com/dzsitpxzw/image/upload/v1668206086/portafolio/wall2_smykx8.jpg"
 								className="img-fluid"
 								alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates"
@@ -32,6 +34,8 @@ export default function Portafolio() {
 						</div>
 						<div className="portfolio-item">
 							<Image
+								width="470"
+								height="470"
 								src=" https://res.cloudinary.com/dzsitpxzw/image/upload/v1668206086/portafolio/wall2_smykx8.jpg"
 								className="img-fluid"
 								alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates"
@@ -52,6 +56,8 @@ export default function Portafolio() {
 						</div>
 						<div className="portfolio-item">
 							<Image
+								width="470"
+								height="470"
 								src=" https://res.cloudinary.com/dzsitpxzw/image/upload/v1668206086/portafolio/wall2_smykx8.jpg"
 								className="img-fluid"
 								alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates"
@@ -71,6 +77,8 @@ export default function Portafolio() {
 						</div>
 						<div className="portfolio-item">
 							<Image
+								width="470"
+								height="470"
 								src=" https://res.cloudinary.com/dzsitpxzw/image/upload/v1668206086/portafolio/wall2_smykx8.jpg"
 								className="img-fluid"
 								alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates"
