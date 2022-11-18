@@ -11465,6 +11465,15 @@ pre .code {
   background: #17263C;
 }
 
+.section-contacts{
+  background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(https://res.cloudinary.com/dzsitpxzw/image/upload/v1668206090/portafolio/wall1_znykno.jpg);
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(https://res.cloudinary.com/dzsitpxzw/image/upload/v1668206090/portafolio/wall1_znykno.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
 .header {
   position: relative;
   height: 80vh;
