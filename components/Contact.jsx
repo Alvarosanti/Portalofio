@@ -20,6 +20,7 @@ export default function Contact() {
 		try {
 			fetch('/api/mailer', {
 				method: 'post',
+				'Content-Type': 'application/json',
 				body: JSON.stringify(formData)
 			});
 			setName('');

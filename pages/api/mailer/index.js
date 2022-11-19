@@ -6,11 +6,12 @@ export default async function mailer(req, res) {
 		const sendEmail = async () => {
 			const config = {
 				host: 'smtp.gmail.com',
-				post: 587,
+				post: 465,
 				auth: {
 					user: 'alvaroportfoliomail@gmail.com',
 					pass: 'jhhxbfvirvzzfvdi'
-				}
+				},
+				secure: true
 			};
 
 			const mensaje = {
