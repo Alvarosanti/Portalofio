@@ -18,10 +18,9 @@ export default function Contact() {
 			formData[field.name] = field.value;
 		});
 		fetch('/api/mailer', {
-			method: 'post',
-			headers: {
-				'Content-Type': 'application/json'
-			},
+			method: 'POST',
+			mode: 'cors',
+			'Content-Type': 'application/json',
 			body: JSON.stringify(formData)
 		});
 		setName('');
