@@ -19,7 +19,9 @@ export default function Contact() {
 		});
 		fetch('/api/mailer', {
 			method: 'post',
-			'Content-Type': 'application/json',
+			headers: {
+				'Content-Type': 'application/json'
+			},
 			body: JSON.stringify(formData)
 		});
 		setName('');
