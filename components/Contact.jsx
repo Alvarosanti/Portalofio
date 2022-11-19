@@ -17,20 +17,15 @@ export default function Contact() {
 			if (!field.name) return;
 			formData[field.name] = field.value;
 		});
-		try {
-			fetch('/api/mailer', {
-				method: 'post',
-				'Content-Type': 'application/json',
-				body: JSON.stringify(formData)
-			});
-			setName('');
-			setEmail('');
-			setMesagge('');
-			setOpenSuccess(true);
-		} catch (error) {
-			alert('Falla en la matrix', error);
-			setOpenError(true);
-		}
+		fetch('/api/mailer', {
+			method: 'post',
+			'Content-Type': 'application/json',
+			body: JSON.stringify(formData)
+		});
+		setName('');
+		setEmail('');
+		setMesagge('');
+		setOpenSuccess(true);
 	}
 
 	const handleCloseSuccess = () => {
