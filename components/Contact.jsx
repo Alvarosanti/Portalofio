@@ -21,6 +21,7 @@ export default function Contact() {
 			method: 'POST',
 			mode: 'cors',
 			'Content-Type': 'application/json',
+			'Access-Control-Allow-Origin': '*',
 			body: JSON.stringify(formData)
 		});
 		setName('');
