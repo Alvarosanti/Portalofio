@@ -1,3 +1,5 @@
+require('dotenv').config();
+
 const nodemailer = require('nodemailer');
 
 export default async function mailer(req, res) {
@@ -9,7 +11,7 @@ export default async function mailer(req, res) {
 				post: 465,
 				auth: {
 					user: 'alvaroportfoliomail@gmail.com',
-					pass: 'jhhxbfvirvzzfvdi'
+					pass: process.env.password
 				},
 				secure: true
 			};
