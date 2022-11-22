@@ -2,6 +2,18 @@
 
 import { Snackbar, Alert } from '@mui/material';
 import { useState } from 'react';
+import SmartphoneIcon from '@mui/icons-material/Smartphone';
+import HomeIcon from '@mui/icons-material/Home';
+import EmailIcon2 from '@mui/icons-material/Email';
+import {
+	EmailIcon,
+	LinkedinShareButton,
+	LinkedinIcon,
+	TwitterShareButton,
+	TwitterIcon,
+	TelegramShareButton,
+	TelegramIcon
+} from 'next-share';
 
 export default function Contact() {
 	const [ openSuccess, setOpenSuccess ] = useState(false);
@@ -107,7 +119,7 @@ export default function Contact() {
 								<h4 className="contact-title">Info.</h4>
 								<div className="row mb-2">
 									<div className="col-1 pt-1 mr-1">
-										<i className="ti-mobile icon-md" />
+										<SmartphoneIcon />
 									</div>
 									<div className="col-10 ">
 										<h6 className="d-inline">
@@ -120,7 +132,7 @@ export default function Contact() {
 								</div>
 								<div className="row mb-2">
 									<div className="col-1 pt-1 mr-1">
-										<i className="ti-map-alt icon-md" />
+										<HomeIcon />
 									</div>
 									<div className="col-10">
 										<h6 className="d-inline">
@@ -131,54 +143,55 @@ export default function Contact() {
 								</div>
 								<div className="row mb-2">
 									<div className="col-1 pt-1 mr-1">
-										<i className="ti-envelope icon-md" />
+										<EmailIcon2 />
 									</div>
 									<div className="col-10">
 										<h6 className="d-inline">
 											Email :<br />{' '}
 											<a className="text-muted" href="mailto: alvarosantisteban56@gmail.com">
-												alvarosantistebab56@gmai.com
+												alvarosantisteban56@gmail.com
 											</a>
 										</h6>
 									</div>
 								</div>
 								<ul className="social-icons pt-4">
 									<li className="social-item">
-										<a className="social-link text-dark" href="#">
-											<i className="ti-facebook" aria-hidden="true" />
+										<a href="mailto: alvarosantisteban56@gmail.com">
+											<EmailIcon size={32} round />
 										</a>
 									</li>
 									<li className="social-item">
-										<a className="social-link text-dark" href="#">
-											<i className="ti-twitter" aria-hidden="true" />
-										</a>
+										<LinkedinShareButton url={'https://www.linkedin.com/in/alvaro-santisteban/'}>
+											<LinkedinIcon size={32} round />
+										</LinkedinShareButton>
 									</li>
 									<li className="social-item">
-										<a className="social-link text-dark" href="#">
-											<i className="ti-google" aria-hidden="true" />
-										</a>
+										<TwitterShareButton
+											url={'https://twitter.com/Alvaro00110001'}
+											title={'Hola que tal, te saludo desde tu portafolio...'}
+										>
+											<TwitterIcon size={32} round />
+										</TwitterShareButton>
 									</li>
 									<li className="social-item">
-										<a className="social-link text-dark" href="#">
-											<i className="ti-instagram" aria-hidden="true" />
-										</a>
-									</li>
-									<li className="social-item">
-										<a className="social-link text-dark" href="#">
-											<i className="ti-github" aria-hidden="true" />
-										</a>
+										<TelegramShareButton
+											url={'https://t.me/alvarod12'}
+											title={'Hola que tal, vengo desde tu portafolio...'}
+										>
+											<TelegramIcon size={32} round />
+										</TelegramShareButton>
 									</li>
 								</ul>
 							</div>
 						</div>
 					</div>
-					<Snackbar open={openSuccess} autoHideDuration={6000} onClose={handleCloseSuccess}>
-						<Alert onClose={handleCloseSuccess} severity="success" sx={{ width: '100%' }}>
-							Mensaje enviado!
-						</Alert>
-					</Snackbar>
 				</div>
 			</div>
+			<Snackbar open={openSuccess} autoHideDuration={6000} onClose={handleCloseSuccess}>
+				<Alert onClose={handleCloseSuccess} severity="success" sx={{ width: '100%' }}>
+					Mensaje enviado!
+				</Alert>
+			</Snackbar>
 			<Snackbar open={openError} autoHideDuration={6000} onClose={handleCloseError}>
 				<Alert severity="error">Error al enviar el mensaje, int&eacute;ntalo mas tarde</Alert>;
 			</Snackbar>
