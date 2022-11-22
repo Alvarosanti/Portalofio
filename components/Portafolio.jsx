@@ -27,7 +27,12 @@ export default function Portafolio() {
 								<div className="text-holder">
 									<h6 className="title">Academia de Marinera</h6>
 									<p className="subtitle">
-										SISTEMA DE GESTION DE INFORMACION PARA LA ACADEMIA DE MARINERA TUSUYPERU
+										<strong>
+											SISTEMA DE GESTION DE INFORMACION PARA LA ACADEMIA DE MARINERA TUSUYPERU,
+										</strong>
+										<br />
+										Se desarrolló un sistema para el registro y evaluación de concursos, empleando
+										la arquitectura MVC, C#, Microsoft Sql Server y control de versiones en GitHub.
 									</p>
 								</div>
 							</div>
@@ -48,8 +53,13 @@ export default function Portafolio() {
 								<div className="text-holder">
 									<h6 className="title">Empresa DECORMOLDURAS & ROSETONES S.A.C.</h6>
 									<p className="subtitle">
-										Sistema web para la Comercialización de Productos para la Empresa DECORMOLDURAS
-										& ROSETONES S.A.C.
+										<strong>
+											Sistema web para la Comercialización de Productos para la Empresa
+											DECORMOLDURAS & ROSETONES S.A.C.
+										</strong>
+										<br />
+										Se desarrolló un sistema , empleando la arquitectura "n capas", Microsoft Sql
+										Server, C# y control de versiones en GitHub.
 									</p>
 								</div>
 							</div>
@@ -70,7 +80,12 @@ export default function Portafolio() {
 								<div className="text-holder">
 									<h6 className="title">AV&Iacute;COLA</h6>
 									<p className="subtitle">
-										SISTEMA INFORMÁTICO DE GESTIÓN COMERCIAL PARA UNA AVÍCOLA “AVÍCOLA NANCY”
+										<strong>
+											SISTEMA INFORMÁTICO DE GESTIÓN COMERCIAL PARA UNA AVÍCOLA “AVÍCOLA NANCY”
+										</strong>
+										<br />
+										Se desarroll&oacute; un sistema web, empleando la arquitectura MVC, C#, MongoDB
+										y control de versiones en GitHub
 									</p>
 								</div>
 							</div>
@@ -91,8 +106,14 @@ export default function Portafolio() {
 								<div className="text-holder">
 									<h6 className="title">Pasteler&iacute;a</h6>
 									<p className="subtitle">
-										SISTEMA WEB IMPLEMENTANDO MERN STACK PARA LA GESTIÓN DE PRODUCCIÓN Y VENTA DE LA
-										EMPRESA LOS ALFAJORES DE LA LOLA
+										<strong>
+											SISTEMA WEB IMPLEMENTANDO MERN STACK PARA LA GESTIÓN DE PRODUCCIÓN Y VENTA
+											DE LA EMPRESA LOS ALFAJORES DE LA LOLA
+										</strong>
+										<br />
+										Se emple&oacute; el stack MERN, junto con github para el control de versiones,
+										desarrollo agil basándose en la documentación y especificación del proyecto,
+										modelado en Rose y BizagiModeler para los flujos.
 									</p>
 								</div>
 							</div>
