@@ -5,6 +5,7 @@ import About from '../components/About';
 import Resume from '../components/Resume';
 import Portafolio from '../components/Portafolio';
 import Contact from '../components/Contact';
+import Footer from '../components/Footer';
 
 export default function PortafolioPage() {
 	return (
@@ -16,6 +17,7 @@ export default function PortafolioPage() {
 			<section className="section bg-dark py-1" />
 			<Portafolio />
 			<Contact />
+			<Footer />
 		</body>
 	);
 }
