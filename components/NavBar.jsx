@@ -46,8 +46,8 @@ export default function NavBar() {
 							className="brand-img"
 						/>
 						<li className="brand-txt">
-							<h5 className="brand-title">John Doe</h5>
-							<div className="brand-subtitle">Web Designer | Developer</div>
+							<h5 className="brand-title">Alvaro Santisteban</h5>
+							<div className="brand-subtitle">Software Engineer | Developer</div>
 						</li>
 					</ul>
 					<ul className="navbar-nav ml-auto">

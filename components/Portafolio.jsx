@@ -17,7 +17,7 @@ export default function Portafolio() {
 								height="470"
 								src=" https://res.cloudinary.com/dzsitpxzw/image/upload/v1668206086/portafolio/wall2_smykx8.jpg"
 								className="img-fluid"
-								alt="Academia Marinera"
+								alt={'Academia Marinera'}
 							/>
 							<div className="content-holder">
 								<a
@@ -38,7 +38,7 @@ export default function Portafolio() {
 								height="470"
 								src=" https://res.cloudinary.com/dzsitpxzw/image/upload/v1668206086/portafolio/wall2_smykx8.jpg"
 								className="img-fluid"
-								alt="Decormolduras SAC"
+								alt={'Decormolduras SAC'}
 							/>
 							<div className="content-holder">
 								<a
@@ -60,7 +60,7 @@ export default function Portafolio() {
 								height="470"
 								src=" https://res.cloudinary.com/dzsitpxzw/image/upload/v1668206086/portafolio/wall2_smykx8.jpg"
 								className="img-fluid"
-								alt="AvicolaN"
+								alt={'AvicolaN'}
 							/>
 							<div className="content-holder">
 								<a
@@ -81,7 +81,7 @@ export default function Portafolio() {
 								height="470"
 								src=" https://res.cloudinary.com/dzsitpxzw/image/upload/v1668206086/portafolio/wall2_smykx8.jpg"
 								className="img-fluid"
-								alt="Pasteleria"
+								alt={'Pasteleria'}
 							/>
 							<div className="content-holder">
 								<a
