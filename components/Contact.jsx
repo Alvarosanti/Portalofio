@@ -186,7 +186,6 @@ export default function Contact() {
 						</div>
 					</div>
 				</div>
-			</div>
 			<Snackbar open={openSuccess} autoHideDuration={6000} onClose={handleCloseSuccess}>
 				<Alert onClose={handleCloseSuccess} severity="success" sx={{ width: '100%' }}>
 					Mensaje enviado!
@@ -195,6 +194,7 @@ export default function Contact() {
 			<Snackbar open={openError} autoHideDuration={6000} onClose={handleCloseError}>
 				<Alert severity="error">Error al enviar el mensaje, int&eacute;ntalo mas tarde</Alert>;
 			</Snackbar>
+			</div>
 		</div>
 	);
 }
