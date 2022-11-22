@@ -2,9 +2,9 @@
 
 export default function Footer() {
 	return (
-		<footer class="footer py-3">
-			<div class="container">
-				<p class="small mb-0 text-light">&copy; 2022 - Alvaro S.</p>
+		<footer className="footer py-3">
+			<div className="container">
+				<p className="small mb-0 text-light">&copy; 2022 - Alvaro S.</p>
 			</div>
 		</footer>
 	);
