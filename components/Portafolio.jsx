@@ -15,7 +15,7 @@ export default function Portafolio() {
 							<Image
 								width="470"
 								height="470"
-								src=" https://res.cloudinary.com/dzsitpxzw/image/upload/v1668206086/portafolio/wall2_smykx8.jpg"
+								src="https://res.cloudinary.com/dzsitpxzw/image/upload/v1668206086/portafolio/wall2_smykx8.jpg"
 								className="img-fluid"
 								alt={'Academia Marinera'}
 							/>
@@ -36,7 +36,7 @@ export default function Portafolio() {
 							<Image
 								width="470"
 								height="470"
-								src=" https://res.cloudinary.com/dzsitpxzw/image/upload/v1668206086/portafolio/wall2_smykx8.jpg"
+								src="https://res.cloudinary.com/dzsitpxzw/image/upload/v1668206086/portafolio/wall2_smykx8.jpg"
 								className="img-fluid"
 								alt={'Decormolduras SAC'}
 							/>
@@ -58,7 +58,7 @@ export default function Portafolio() {
 							<Image
 								width="470"
 								height="470"
-								src=" https://res.cloudinary.com/dzsitpxzw/image/upload/v1668206086/portafolio/wall2_smykx8.jpg"
+								src="https://res.cloudinary.com/dzsitpxzw/image/upload/v1668206086/portafolio/wall2_smykx8.jpg"
 								className="img-fluid"
 								alt={'AvicolaN'}
 							/>
@@ -79,7 +79,7 @@ export default function Portafolio() {
 							<Image
 								width="470"
 								height="470"
-								src=" https://res.cloudinary.com/dzsitpxzw/image/upload/v1668206086/portafolio/wall2_smykx8.jpg"
+								src="https://res.cloudinary.com/dzsitpxzw/image/upload/v1668206086/portafolio/wall2_smykx8.jpg"
 								className="img-fluid"
 								alt={'Pasteleria'}
 							/>
