@@ -2,9 +2,9 @@
 
 import { Snackbar, Alert } from '@mui/material';
 import { useState } from 'react';
-import SmartphoneIcon from '@mui/icons-material/Smartphone';
-import HomeIcon from '@mui/icons-material/Home';
-import EmailIcon2 from '@mui/icons-material/Email';
+// import SmartphoneIcon from '@mui/icons-material/Smartphone';
+// import HomeIcon from '@mui/icons-material/Home';
+// import EmailIcon2 from '@mui/icons-material/Email';
 import {
 	EmailIcon,
 	LinkedinShareButton,
@@ -119,7 +119,7 @@ export default function Contact() {
 								<h4 className="contact-title">Info.</h4>
 								<div className="row mb-2">
 									<div className="col-1 pt-1 mr-1">
-										<SmartphoneIcon />
+										{/* <SmartphoneIcon /> */}
 									</div>
 									<div className="col-10 ">
 										<h6 className="d-inline">
@@ -132,7 +132,7 @@ export default function Contact() {
 								</div>
 								<div className="row mb-2">
 									<div className="col-1 pt-1 mr-1">
-										<HomeIcon />
+										{/* <HomeIcon /> */}
 									</div>
 									<div className="col-10">
 										<h6 className="d-inline">
@@ -143,7 +143,7 @@ export default function Contact() {
 								</div>
 								<div className="row mb-2">
 									<div className="col-1 pt-1 mr-1">
-										<EmailIcon2 />
+										{/* <EmailIcon2 /> */}
 									</div>
 									<div className="col-10">
 										<h6 className="d-inline">
@@ -157,7 +157,7 @@ export default function Contact() {
 								<ul className="social-icons pt-4">
 									<li className="social-item">
 										<a href="mailto: alvarosantisteban56@gmail.com">
-											<EmailIcon size={32} round />
+											{/* <EmailIcon size={32} round /> */}
 										</a>
 									</li>
 									<li className="social-item">

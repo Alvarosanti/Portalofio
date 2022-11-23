@@ -9,9 +9,9 @@ import {
 	TelegramShareButton,
 	TelegramIcon
 } from 'next-share';
-import CodeIcon from '@mui/icons-material/Code';
-import DesktopMacIcon from '@mui/icons-material/DesktopMac';
-import BiotechIcon from '@mui/icons-material/Biotech';
+// import CodeIcon from '@mui/icons-material/Code';
+// import DesktopMacIcon from '@mui/icons-material/DesktopMac';
+// import BiotechIcon from '@mui/icons-material/Biotech';
 
 export default function About() {
 	const handleClickDownloadResume = () => {
@@ -99,7 +99,7 @@ export default function About() {
 					<span className="line mb-5" />
 					<div className="row">
 						<div className="col-1 text-danger pt-1">
-							<DesktopMacIcon />
+							{/* <DesktopMacIcon /> */}
 						</div>
 						<div className="col-10 ml-auto mr-3">
 							<h6>HelpDesk</h6>
@@ -109,7 +109,7 @@ export default function About() {
 					</div>
 					<div className="row">
 						<div className="col-1 text-danger pt-1">
-							<CodeIcon />
+							{/* <CodeIcon /> */}
 						</div>
 						<div className="col-10 ml-auto mr-3">
 							<h6>FrontEnd Developer</h6>
@@ -119,7 +119,7 @@ export default function About() {
 					</div>
 					<div className="row">
 						<div className="col-1 text-danger pt-1">
-							<BiotechIcon />
+							{/* <BiotechIcon /> */}
 						</div>
 						<div className="col-10 ml-auto mr-3">
 							<h6>Q.Asurance</h6>
