@@ -58,7 +58,7 @@ export default function Portafolio() {
 											DECORMOLDURAS & ROSETONES S.A.C.
 										</strong>
 										<br />
-										Se desarrolló un sistema , empleando la arquitectura "n capas", Microsoft Sql
+										Se desarrolló un sistema , empleando la arquitectura n capas, Microsoft Sql
 										Server, C# y control de versiones en GitHub.
 									</p>
 								</div>
@@ -81,7 +81,7 @@ export default function Portafolio() {
 									<h6 className="title">AV&Iacute;COLA</h6>
 									<p className="subtitle">
 										<strong>
-											SISTEMA INFORMÁTICO DE GESTIÓN COMERCIAL PARA UNA AVÍCOLA “AVÍCOLA NANCY”
+											SISTEMA INFORMÁTICO DE GESTIÓN COMERCIAL PARA UNA AVÍCOLA AVÍCOLA NANCY
 										</strong>
 										<br />
 										Se desarroll&oacute; un sistema web, empleando la arquitectura MVC, C#, MongoDB
