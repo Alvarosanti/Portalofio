@@ -64,6 +64,9 @@ export default function About() {
 						<li>
 							<span>Ubicaci&oacute;n</span> : Lima, Per&uacute;
 						</li>
+						<li>
+							<span>Github</span> : <a href='https://github.com/Alvarosanti'>github.com/alvarosanti</a>
+						</li>
 					</ul>
 					<ul className="social-icons pt-3">
 						<li className="social-item">
