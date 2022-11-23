@@ -126,7 +126,7 @@ export default function About() {
 						</div>
 						<div className="col-10 ml-auto mr-3">
 							<h6>Q.Asurance</h6>
-							<p className="subtitle">Automatizacion con Cypress</p>
+							<p className="subtitle">Automatizacion</p>
 							<hr />
 						</div>
 					</div>

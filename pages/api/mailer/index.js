@@ -5,11 +5,12 @@ const nodemailer = require('nodemailer');
 export default async function mailer(req, res) {
 	try {
 		const body = JSON.parse(req.body);
+
 		const config = {
 			host: 'smtp.gmail.com',
 			post: 465,
 			auth: {
-				user: 'alvaroportfoliomail@gmail.com',
+				user: process.env.user,
 				pass: process.env.password
 			},
 			secure: true
@@ -30,7 +31,6 @@ export default async function mailer(req, res) {
 		const transport = nodemailer.createTransport(config);
 
 		const info = await transport.sendMail(mensaje);
-		console.log(info);
 		res.status(200).json('mail sent');
 	} catch (error) {
 		res.status(404).json('mail error');
