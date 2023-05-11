@@ -45,7 +45,6 @@ export default function Resume() {
 								<h6 className="title text-danger">2022 - Presente</h6>
 								<p>QA - Automation</p>
 								<p className="subtitle">NTTData</p>
-								<hr />
 							</div>
 						</div>
 					</div>
