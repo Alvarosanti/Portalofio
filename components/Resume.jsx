@@ -15,7 +15,7 @@ export default function Resume() {
 								</div>
 							</div>
 							<div className="card-body">
-								<h6 className="title text-danger">2016 - Present</h6>
+								<h6 className="title text-danger">2016 - 2023</h6>
 								<p>Ing. Inform&aacute;tica</p>
 								<p className="subtitle">
 									Estudiante de la carrera Ingenier&iacute;a Inform&aacute;tica en la universidad
@@ -38,9 +38,13 @@ export default function Resume() {
 								<p>Software Engineer Trainee</p>
 								<p className="subtitle">Serpost -</p>
 								<hr />
-								<h6 className="title text-danger">2021 - Presente</h6>
+								<h6 className="title text-danger">2021 - 2022</h6>
 								<p>Front-end Developer</p>
-								<p className="subtitle">Mandu -</p>
+								<p className="subtitle">Mandu</p>
+								<hr />
+								<h6 className="title text-danger">2022 - Presente</h6>
+								<p>QA - Automation</p>
+								<p className="subtitle">NTTData</p>
 								<hr />
 							</div>
 						</div>
