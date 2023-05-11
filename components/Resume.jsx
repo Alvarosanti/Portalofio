@@ -21,7 +21,6 @@ export default function Resume() {
 									Estudiante de la carrera Ingenier&iacute;a Inform&aacute;tica en la universidad
 									Ricardo Palma.
 								</p>
-								<hr />
 							</div>
 						</div>
 					</div>
