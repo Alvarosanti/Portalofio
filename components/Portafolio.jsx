@@ -7,7 +7,7 @@ export default function Portafolio() {
 		<section className="section bg-custom-gray" id="portfolio">
 			<div className="container">
 				<h1 className="mb-5">
-					<span className="text-danger">Mi</span> Portafolio
+					Portafolio
 				</h1>
 				<div className="portfolio">
 					<div className="portfolio-container">

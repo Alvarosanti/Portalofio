@@ -17,14 +17,14 @@ export default function Header1() {
 	const typed = useRef(null);
 	useEffect(() => {
 		const options = {
-			strings: [' <a>Alvaro Santisteban</a>'],
+			strings: ['<a>Software Engineer</a>','<a>Developer</a>'],
 			typeSpeed: 90,
 			backSpeed: 50,
 			startDelay: 1000,
-			loop: false,
+			loop: true,
 			loopCount: false,
 			cursorChat: '|',
-			backDelay: 1500
+			backDelay: 900
 		};
 
 		typed.current = new Typed(el.current, options);
@@ -80,9 +80,12 @@ export default function Header1() {
 				<div className="header-content">
 					<h4 className="header-subtitle">Hello, I am</h4>
 					<h1 className="header-title">
-						<span style={{ whiteSpace: 'pre', maxWidth: "768px" }} ref={el} />
+						Alvaro Rodrigo
 					</h1>
-					<h6 className="header-mono">Software Engineer | Developer</h6>
+					<h6 className="header-mono">
+						 <span style={{ whiteSpace: 'pre', maxWidth: "768px" }} ref={el} /> 
+						{/* Software Engineer | Developer */}
+						</h6>
 					<button onClick={handleClickDownloadResume} className="btn btn-primary btn-rounded">
 						<i className="ti-printer pr-2" />Ver Resumen&nbsp;
 					</button>

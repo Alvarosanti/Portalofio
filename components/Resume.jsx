@@ -3,7 +3,7 @@ export default function Resume() {
 		<section className="section" id="resume">
 			<div className="container">
 				<h2 className="mb-5">
-					<span className="text-danger">Mi</span> Curr&iacute;culum
+					Curr&iacute;culum
 				</h2>
 				<div className="row">
 					<div className="col-md-6 col-lg-4">

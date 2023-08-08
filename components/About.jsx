@@ -32,11 +32,10 @@ export default function About() {
 				<div className="col-lg-4 about-card">
 					<h3 className="font-weight-light">Qui&eacute;n soy?</h3>
 					<span className="line mb-5" />
-					<h5 className="mb-3">Desarrollador / Estudiante en Ingenier&iacute;a Inform&aacute;tica</h5>
+					<h5 className="mb-3">Desarrollador / Egresado en Ingenier&iacute;a Inform&aacute;tica</h5>
 					<p className="mt-20">
 						Tengo la capacidad de adaptarme rapido y afrontar los problemas de manera efectiva, tengo un
-						gran interés de aprender todo el tiempo, me considero una persona empática con valores,
-						compromiso, responsabilidad y honesto.
+						gran interés de aprender todo el tiempo.
 					</p>
 					<button onClick={handleClickDownloadResume} className="btn btn-outline-danger">
 						<i className="icon-down-circled2 " />Descargar CV

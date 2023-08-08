@@ -23,17 +23,17 @@ export default function NavBar() {
 					<ul className="navbar-nav mr-auto">
 						<li className="nav-item">
 							<a href="#home" className="nav-link">
-								Home
+								Inicio
 							</a>
 						</li>
 						<li className="nav-item">
 							<a href="#about" className="nav-link">
-								About
+								Qui&eacute;n soy?
 							</a>
 						</li>
 						<li className="nav-item">
 							<a href="#resume" className="nav-link">
-								Resume
+								Curr&iacute;culum
 							</a>
 						</li>
 					</ul>
@@ -58,7 +58,7 @@ export default function NavBar() {
 						</li>
 						<li className="nav-item last-item">
 							<a href="#contact" className="nav-link">
-								Contact
+								Contacto
 							</a>
 						</li>
 					</ul>
