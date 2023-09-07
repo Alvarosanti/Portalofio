@@ -90,6 +90,39 @@ export default function Resume() {
 										aria-valuemax="100"
 									/>
 								</div>
+								<h6>Jira</h6>
+								<div className="progress mb-3">
+									<div
+										className="progress-bar bg-danger"
+										role="progressbar"
+										style={{ width: '50%' }}
+										aria-valuenow="25"
+										aria-valuemin="0"
+										aria-valuemax="100"
+									/>
+								</div>
+								<h6>Docker</h6>
+								<div className="progress mb-3">
+									<div
+										className="progress-bar bg-danger"
+										role="progressbar"
+										style={{ width: '40%' }}
+										aria-valuenow="25"
+										aria-valuemin="0"
+										aria-valuemax="100"
+									/>
+								</div>
+								<h6>Jenkins</h6>
+								<div className="progress mb-3">
+									<div
+										className="progress-bar bg-danger"
+										role="progressbar"
+										style={{ width: '40%' }}
+										aria-valuenow="25"
+										aria-valuemin="0"
+										aria-valuemax="100"
+									/>
+								</div>
 								<h6>JavaScript</h6>
 								<div className="progress mb-3">
 									<div

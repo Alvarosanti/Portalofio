@@ -41,14 +41,15 @@ export default function Portafolio() {
 							<Image
 								width="470"
 								height="470"
-								src="https://res.cloudinary.com/dzsitpxzw/image/upload/e_improve,w_300,h_450,c_thumb,g_auto/v1669153228/portafolio/logo1_shvwp0.svg"
+								src="https://res.cloudinary.com/dzsitpxzw/image/upload/e_improve,w_300,h_450,c_thumb,g_auto/v1694106056/portafolio/logo1_shvwp0_ijv9rs.jpg"
 								className="img-fluid"
 								alt={'Decormolduras SAC'}
 							/>
 							<div className="content-holder">
 								<a
 									className="img-popup"
-									href="https://res.cloudinary.com/dzsitpxzw/image/upload/e_improve,w_300,h_450,c_thumb,g_auto/v1669153228/portafolio/logo1_shvwp0.svg"
+									href="https://res.cloudinary.com/dzsitpxzw/image/upload/e_improve,w_300,h_450,c_thumb,g_auto/v1694106056/portafolio/logo1_shvwp0_ijv9rs.jpg"
+									
 								/>
 								<div className="text-holder">
 									<h6 className="title">Empresa DECORMOLDURAS & ROSETONES S.A.C.</h6>
