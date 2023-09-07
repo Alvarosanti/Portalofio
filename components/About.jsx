@@ -46,16 +46,13 @@ export default function About() {
 					<span className="line mb-5" />
 					<ul className="mt40 info list-unstyled">
 						<li>
-							<span>Cumpleaños</span> : 12/07/1998
+							<span>Nacimiento</span> : 12/07/1998
 						</li>
 						<li>
 							<span>Email</span> :<a href="mailto: alvarosantisteban56@gmail.com">
 								{' '}
 								alvarosantisteban56@gmail.com
 							</a>
-						</li>
-						<li>
-							<span>Tel&eacute;fono</span> : <a href="tel:+51 969369120">+51 969369120</a>
 						</li>
 						<li>
 							<span>Telegram</span> : <a href="https://t.me/alvarod12">@alvarod12 </a>

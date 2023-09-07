@@ -35,14 +35,14 @@ export default function Resume() {
 							<div className="card-body">
 								<h6 className="title text-danger">2020 - 2021</h6>
 								<p>Software Engineer Trainee</p>
-								<p className="subtitle">Serpost -</p>
+								<p className="subtitle">Serpost</p>
 								<hr />
 								<h6 className="title text-danger">2021 - 2022</h6>
 								<p>Front-end Developer</p>
 								<p className="subtitle">Mandu</p>
 								<hr />
 								<h6 className="title text-danger">2022 - Presente</h6>
-								<p>QA - Automation</p>
+								<p>Software Engineer</p>
 								<p className="subtitle">NTTData</p>
 							</div>
 						</div>
@@ -52,7 +52,7 @@ export default function Resume() {
 						<div className="card">
 							<div className="card-header">
 								<div className="pull-left">
-									<h4 className="mt-2">Skills</h4>
+									<h4 className="mt-2">Habilidades</h4>
 									<span className="line" />
 								</div>
 							</div>

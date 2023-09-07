@@ -78,7 +78,7 @@ export default function Header1() {
 					</li>
 				</ul>
 				<div className="header-content">
-					<h4 className="header-subtitle">Hello, I am</h4>
+					<h4 className="header-subtitle">Hola, soy</h4>
 					<h1 className="header-title">
 						Alvaro Rodrigo
 					</h1>

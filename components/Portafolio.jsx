@@ -1,8 +1,21 @@
+'use client';
 import '../scss/card.module.scss';
 import '../styles/portafolio.css';
 import Image from 'next/image';
+import Skeleton from '@mui/material/Skeleton';
+import Box from '@mui/material/Box';
+import { useState } from 'react';
 
 export default function Portafolio() {
+	const [isLoad, setLoad] = useState(false);
+
+	const Skeleton1 = () => (<Skeleton
+		sx={{ bgcolor: 'grey.100' }}
+		variant="rectangular"
+		width={"100%"}
+		height={"100%"}
+	/>)
+
 	return (
 		<section className="section bg-custom-gray" id="portfolio">
 			<div className="container">
@@ -13,12 +26,14 @@ export default function Portafolio() {
 					<div className="portfolio-container">
 						<div className="portfolio-item">
 							<Image
-								width="470"
+								width="410"
 								height="470"
-								src="https://res.cloudinary.com/dzsitpxzw/image/upload/e_improve,w_300,h_450,c_thumb,g_auto/v1669152904/portafolio/marinera_sokwte.jpg"
-								className="img-fluid"
+								src={"https://res.cloudinary.com/dzsitpxzw/image/upload/e_improve,w_300,h_450,c_thumb,g_auto/v1669152904/portafolio/marinera_sokwte.jpg"}
 								alt={'Academia Marinera'}
+								className={`${(!isLoad) ? 'img-fluid' : 'opacity-0'}`}
+								onLoadingComplete={() => setLoad(true)}
 							/>
+							{!isLoad && (<Skeleton1 />)}
 							<div className="content-holder">
 								<a
 									className="img-popup"
@@ -39,11 +54,11 @@ export default function Portafolio() {
 						</div>
 						<div className="portfolio-item">
 							<Image
-								width="470"
+								width="410"
 								height="470"
 								src="https://res.cloudinary.com/dzsitpxzw/image/upload/e_improve,w_300,h_600,c_thumb,g_auto/v1669153228/portafolio/logo1_shvwp0.svg"
-								className="img-fluid"
-								alt={'Decormolduras SAC'}
+								alt={'Decormolduras_SAC'}
+								className={"img-fluid"}
 							/>
 							<div className="content-holder">
 								<a
@@ -66,11 +81,11 @@ export default function Portafolio() {
 						</div>
 						<div className="portfolio-item">
 							<Image
-								width="470"
+								width="410"
 								height="470"
 								src="https://res.cloudinary.com/dzsitpxzw/image/upload/e_improve,w_300,h_450,c_thumb,g_auto/v1669153357/portafolio/avicola_wqcnh8.jpg"
-								className="img-fluid"
 								alt={'AvicolaN'}
+								className={"img-fluid"}
 							/>
 							<div className="content-holder">
 								<a
@@ -92,11 +107,11 @@ export default function Portafolio() {
 						</div>
 						<div className="portfolio-item">
 							<Image
-								width="470"
+								width="410"
 								height="470"
 								src="https://res.cloudinary.com/dzsitpxzw/image/upload/e_improve,w_300,h_450,c_thumb,g_auto/v1669153596/portafolio/pasteleria_qjltau.jpg"
-								className="img-fluid"
 								alt={'Pasteleria'}
+								className={"img-fluid"}
 							/>
 							<div className="content-holder">
 								<a

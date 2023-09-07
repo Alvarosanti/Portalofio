@@ -16,11 +16,11 @@ import {
 } from 'next-share';
 
 export default function Contact() {
-	const [ openSuccess, setOpenSuccess ] = useState(false);
-	const [ openError, setOpenError ] = useState(false);
-	const [ name, setName ] = useState('');
-	const [ email, setEmail ] = useState('');
-	const [ mesagge, setMesagge ] = useState('');
+	const [openSuccess, setOpenSuccess] = useState(false);
+	const [openError, setOpenError] = useState(false);
+	const [name, setName] = useState('');
+	const [email, setEmail] = useState('');
+	const [mesagge, setMesagge] = useState('');
 
 	async function sendEmail(e) {
 		e.preventDefault();
@@ -119,19 +119,6 @@ export default function Contact() {
 								<h4 className="contact-title">Info.</h4>
 								<div className="row mb-2">
 									<div className="col-1 pt-1 mr-1">
-										<SmartphoneIcon />
-									</div>
-									<div className="col-10 ">
-										<h6 className="d-inline">
-											Tel&eacute;fono : <br />{' '}
-											<span className="text-muted">
-												<a href="tel:+51 969369120">+51 969369120</a>
-											</span>
-										</h6>
-									</div>
-								</div>
-								<div className="row mb-2">
-									<div className="col-1 pt-1 mr-1">
 										<HomeIcon />
 									</div>
 									<div className="col-10">
@@ -189,6 +176,7 @@ export default function Contact() {
 			</div>
 			<Snackbar open={openSuccess} autoHideDuration={6000} onClose={handleCloseSuccess}><Alert onClose={handleCloseSuccess} severity="success" sx={{ width: '100%' }}>Mensaje enviado!</Alert></Snackbar>
 			<Snackbar open={openError} autoHideDuration={6000} onClose={handleCloseError}><Alert severity="error">Error al enviar el mensaje, intentalo mas tarde</Alert></Snackbar>
+			<br />
 		</div>
 	);
 }
